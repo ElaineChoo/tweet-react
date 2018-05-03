@@ -1,4 +1,3 @@
-console.log(tweets);
 class ListItem extends React.Component {
 	render() {
 		return (
@@ -9,9 +8,9 @@ class ListItem extends React.Component {
 				<div id="content">
 					<p>
 						<strong>{this.props.name} </strong>
-						<span>@{this.props.screen_name}</span>
+						<span id="screenName">@{this.props.screen_name}</span>
 						<span id="dot">.</span>
-						<span>{this.props.created_at}</span>
+						<span id="time">{this.props.created_at}</span>
 					</p>
 					<p>
 						{this.props.text} <a href={this.props.link}>{this.props.link}</a>
