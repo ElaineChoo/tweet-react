@@ -17,8 +17,12 @@ class ListItem extends React.Component {
 					</p>
 				</div>
 				<div id="response">
-					<div id="retweet">{this.props.retweet_count}</div>
-					<div id="favCount">{this.props.favorite_count}</div>
+					<div id="retweet">
+						<i className="fas fa-retweet" /> {this.props.retweet_count}
+					</div>
+					<div id="favCount">
+						<i className="far fa-heart" /> {this.props.favorite_count}
+					</div>
 				</div>
 				<hr />
 			</div>
