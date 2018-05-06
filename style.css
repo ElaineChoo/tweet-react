@@ -3,16 +3,68 @@ body {
     flex-wrap: wrap;
 }
 
+.header {
+    border-top: 2px solid #65778677;
+    border-bottom: 2px solid #65778677;
+}
+
+.fa-arrow-left {
+    padding-left: 1rem;
+}
+
+.fa-arrow-left,
+.fa-check-circle {
+    display: inline-block;
+    color: #1da1f2;
+}
+
+.fa-check-circle {
+    padding-left: 0.3rem;
+}
+
+#userName {
+    display: inline-block;
+    padding-left: 3rem;
+}
+
+#profileImg {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
 #userImage,
 #content {
     display: inline-block;
     padding: 1rem;
 }
 
-#dot {
-    margin: 0 .3rem;
+#title {
+    align-items: center;
 }
 
+#name,
+#screenName,
+#dot,
+#time {
+    display: inline-block;
+    padding: 0 .3rem;
+}
+
+#dot {
+    text-align: center;
+}
+
+#message {
+    padding-top: 0.6rem;
+}
+
+.fa-retweet,
+.fa-heart,
+#tweetCountText,
+#favCountText,
 #screenName,
 #dot,
 #time {

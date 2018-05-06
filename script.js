@@ -3,25 +3,25 @@ class ListItem extends React.Component {
 		return (
 			<div>
 				<div id="userImage">
-					<img src={this.props.profile_image_url} alt="profile image" />
+					<img id="profileImg" src={this.props.profile_image_url} alt="profile image" />
 				</div>
 				<div id="content">
-					<p>
-						<strong>{this.props.name} </strong>
-						<span id="screenName">@{this.props.screen_name}</span>
-						<span id="dot">.</span>
-						<span id="time">{this.props.created_at}</span>
-					</p>
-					<p>
+					<div id="title">
+						<div id="name"><strong>{this.props.name} </strong></div>
+						<div id="screenName">@{this.props.screen_name}</div>
+						<div id="dot">.</div>
+						<div id="time">{this.props.created_at}</div>
+					</div>
+					<div id="message">
 						{this.props.text} <a href={this.props.link}>{this.props.link}</a>
-					</p>
+					</div>
 				</div>
 				<div id="response">
 					<div id="retweet">
-						<i className="fas fa-retweet" /> {this.props.retweet_count}
+						<i className="fas fa-retweet" /> <span id="tweetCountText">{this.props.retweet_count}</span>
 					</div>
 					<div id="favCount">
-						<i className="far fa-heart" /> {this.props.favorite_count}
+						<i className="far fa-heart" /> <span id="favCountText">{this.props.favorite_count}</span>
 					</div>
 				</div>
 				<hr />
